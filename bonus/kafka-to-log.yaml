@@ -1,0 +1,12 @@
+apiVersion: camel.apache.org/v1alpha1
+kind: Integration
+metadata:
+  name: kafka-to-log
+spec:
+  sources:
+  - name: kafka-to-log.groovy
+    content: |-
+
+      from('kafka:my-topic?brokers=my-cluster-kafka-bootstrap:9092')
+      .log('Received from kafka: ${body}')
+

@@ -130,6 +130,22 @@ items:
       - 'camel:core'
       - 'camel:jackson'
       - 'runtime:jvm'
+- apiVersion: camel.apache.org/v1alpha1
+  kind: IntegrationContext
+  metadata:
+    labels:
+      camel.apache.org/context.created.by.kind: Integration
+      camel.apache.org/context.created.by.name: telegram-to-kafka
+      camel.apache.org/context.created.by.version: '1034646'
+      camel.apache.org/context.type: platform
+    name: ctx-bkdnji3ji3ackgbvqit0
+  spec:
+    dependencies:
+      - 'camel:core'
+      - 'camel:kafka'
+      - 'camel:telegram'
+      - 'runtime:groovy'
+      - 'runtime:jvm'
 kind: List
 metadata:
   resourceVersion: ""

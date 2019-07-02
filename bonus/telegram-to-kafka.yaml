@@ -1,0 +1,12 @@
+apiVersion: camel.apache.org/v1alpha1
+kind: Integration
+metadata:
+  name: telegram-to-kafka
+spec:
+  sources:
+  - name: telegram-to-kafka.groovy
+    content: |-
+
+      from('telegram:bots/<<put-your-token-here>')
+        .convertBodyTo(String.class)
+        .to('kafka:my-topic?brokers=my-cluster-kafka-bootstrap:9092')
