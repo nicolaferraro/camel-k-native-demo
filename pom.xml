@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.codemotion</groupId>
+    <artifactId>camel-k-demo-java</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <!--
+
+     NOTE: This pom.xml file is here only to help the IDE configuring autocompletion correctly.
+
+     -->
+
+    <build>
+        <sourceDirectory>.</sourceDirectory>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-core</artifactId>
+            <version>2.24.0</version>
+        </dependency>
+    </dependencies>
+
+</project>

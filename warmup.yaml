@@ -1,0 +1,136 @@
+apiVersion: v1
+items:
+- apiVersion: camel.apache.org/v1alpha1
+  kind: IntegrationContext
+  metadata:
+    labels:
+      camel.apache.org/context.created.by.kind: Integration
+      camel.apache.org/context.created.by.name: example
+      camel.apache.org/context.created.by.version: "504693"
+      camel.apache.org/context.type: platform
+    name: ctx-bkd6oddqtf1vbv3g7cog
+- apiVersion: camel.apache.org/v1alpha1
+  kind: IntegrationContext
+  metadata:
+    labels:
+      camel.apache.org/context.created.by.kind: Integration
+      camel.apache.org/context.created.by.name: example
+      camel.apache.org/context.created.by.version: "505583"
+      camel.apache.org/context.type: platform
+    name: ctx-bkd6pvdqtf1vbv3g7cp0
+  spec:
+    dependencies:
+    - camel:core
+    - runtime:groovy
+    - runtime:jvm
+- apiVersion: camel.apache.org/v1alpha1
+  kind: IntegrationContext
+  metadata:
+    labels:
+      camel.apache.org/context.created.by.kind: Integration
+      camel.apache.org/context.created.by.name: example
+      camel.apache.org/context.created.by.version: "507031"
+      camel.apache.org/context.type: platform
+    name: ctx-bkd6si5qtf1vbv3g7cpg
+  spec:
+    dependencies:
+    - camel:core
+    - camel:http4
+    - runtime:groovy
+    - runtime:jvm
+- apiVersion: camel.apache.org/v1alpha1
+  kind: IntegrationContext
+  metadata:
+    labels:
+      camel.apache.org/context.created.by.kind: Integration
+      camel.apache.org/context.created.by.name: example
+      camel.apache.org/context.created.by.version: "510598"
+      camel.apache.org/context.type: platform
+    name: ctx-bkd728tqtf1vbv3g7cq0
+  spec:
+    dependencies:
+    - camel:core
+    - camel:http4
+    - camel:kafka
+    - runtime:groovy
+    - runtime:jvm
+- apiVersion: camel.apache.org/v1alpha1
+  kind: IntegrationContext
+  metadata:
+    labels:
+      camel.apache.org/context.created.by.kind: Integration
+      camel.apache.org/context.created.by.name: reader
+      camel.apache.org/context.created.by.version: "511393"
+      camel.apache.org/context.type: platform
+    name: ctx-bkd73idqtf1vbv3g7cqg
+  spec:
+    dependencies:
+    - camel:core
+    - camel:kafka
+    - runtime:groovy
+    - runtime:jvm
+- apiVersion: camel.apache.org/v1alpha1
+  kind: IntegrationContext
+  metadata:
+    labels:
+      camel.apache.org/context.created.by.kind: Integration
+      camel.apache.org/context.created.by.name: function
+      camel.apache.org/context.created.by.version: "522448"
+      camel.apache.org/context.type: platform
+    name: ctx-bkd7hmlqtf1vbv3g7cr0
+  spec:
+    dependencies:
+    - camel-k:knative
+    - camel:core
+    - runtime:jvm
+- apiVersion: camel.apache.org/v1alpha1
+  kind: IntegrationContext
+  metadata:
+    labels:
+      camel.apache.org/context.created.by.kind: Integration
+      camel.apache.org/context.created.by.name: caller
+      camel.apache.org/context.created.by.version: "525870"
+      camel.apache.org/context.type: platform
+    name: ctx-bkd7ks0n8k3909ttpvo0
+  spec:
+    dependencies:
+    - camel-k:knative
+    - camel:core
+    - runtime:groovy
+    - runtime:jvm
+
+- apiVersion: camel.apache.org/v1alpha1
+  kind: IntegrationContext
+  metadata:
+    labels:
+      camel.apache.org/context.created.by.kind: Integration
+      camel.apache.org/context.created.by.name: caller
+      camel.apache.org/context.created.by.version: '858281'
+      camel.apache.org/context.type: platform
+    name: ctx-bkdhtm1lev33m12gsb50
+  spec:
+    dependencies:
+      - 'camel-k:knative'
+      - 'camel:core'
+      - 'camel:http4'
+      - 'runtime:groovy'
+      - 'runtime:jvm'
+- apiVersion: camel.apache.org/v1alpha1
+  kind: IntegrationContext
+  metadata:
+    labels:
+      camel.apache.org/context.created.by.kind: Integration
+      camel.apache.org/context.created.by.name: printer
+      camel.apache.org/context.created.by.version: '862960'
+      camel.apache.org/context.type: platform
+    name: ctx-bkdi291lev33m12gsb5g
+  spec:
+    dependencies:
+      - 'camel-k:knative'
+      - 'camel:core'
+      - 'camel:jackson'
+      - 'runtime:jvm'
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""
